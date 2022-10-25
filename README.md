@@ -64,6 +64,60 @@ Submit PRs: Try and submit at least **_4 PRs_** and wait for it to be verified. 
 - Submitted in a repo labelled `hacktoberfest` , AND Merged, OR Approved
 - You can opt not to receive a t-shirt and stickers and you can choose to have a tree planted in your name and help make Hacktoberfest 2022 more carbon neutral.
 
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+### How to Contribute?
+
+#### `STEP 1` :  Fork [this](https://github.com/acash1809/Open-Source.git) repository.
+#### `STEP 2` :  Clone your forked copy of the project.
+```
+git clone https://github.com/<your_username>/Open-Source.git
+```
+#### `STEP 3` : Navigate to the project directory .
+```
+cd Open-Source
+```
+#### `STEP 4` : Add a reference (remote) to the original repository.
+```
+git remote add upstream https://github.com/acash1809/Open-Source.git
+```
+#### `STEP 5` : Check the remotes for this repository.
+```
+git remote -v
+```
+#### `STEP 6` : Always take a pull from the upstream repository to your master branch to keep it at par with the main project (updated repository).
+```
+git pull upstream master
+```
+#### `STEP 7` : Create a new branch.
+```
+git checkout -b <your_branch_name>
+```
+#### `STEP 8` : Perform your desired changes to the code base.
+#### `STEP 9` : Track your changes .
+```
+git add . 
+```
+#### `STEP 10` : Commit your changes .
+```
+git commit -m "Relevant message"
+```
+#### `STEP 11` : Push the committed changes in your feature branch to your remote repo.
+```
+git push -u origin <your_branch_name>
+```
+#### `STEP 12` : To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repository you are supposed to make a PR to.
+#### `STEP 13` : Add appropriate title and description to your pull request explaining your changes and efforts done.
+#### `STEP 14` : Click on `Create Pull Request`.
+
+#### Voila! You have made a PR. Sit back patiently and relax while your PR is reviewed
+
 ---
 
 <h3 align="center"> Whether it’s your first or fiftieth pull request, there’s always more to learn! We’ve put together a few resources that can help you create quality pull requests, keep your repositories pristine, and build on your open source knowledge. </h3>
