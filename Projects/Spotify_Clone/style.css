@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rufina:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rufina:wght@700&family=Varela+Round&display=swap');
+body{
+    scroll-behavior: smooth;
+    font-family: 'Rufina', serif;
+    color:whitesmoke;
+    background-color:bisque
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    margin: 0px 0px 5px 0px;
+}
+nav ul{
+    display:flex;
+    top:0px;
+    width:132px;
+    list-style-type:none;
+    align-items: center;
+    height:60px;
+    width:1300px;
+    background-color: black;
+    padding:0px;
+}
+nav ul li{
+    padding: 0px 20px 0px 0px;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    font-family: spotify-circular,Helvetica,Arial,sans-serif;
+}
+.logo img{
+    height: 44px;
+    margin: 7px 0px;
+    padding:0px 4px;
+}
+.container{
+    height:500px;
+    width:80%;
+    background-image:url(/Projects/images/glowing-musical-pentagram-background-with-sound-notes_1017-31220.webp);
+    background-size: cover;
+    font-family: 'Varela Round', sans-serif;
+    margin:12px auto;
+    border-radius: 10px;
+    padding:10px;
+}
+.play{
+    height:100px;
+    width:500px;
+    color:black;
+    border:solid goldenrod 2px;
+    margin:20x 10px;
+}
+.songs{
+    height:50px;
+    width:800px;
+    border:solid gold 2px;
+    margin:10px 20px;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    background-color: white;
+    color:black;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+}
+.songs .songname{
+    margin:0px 0px;
+}
+.songs .timestamp{
+    padding: 0px 23px;
+    cursor:pointer;
+}
+.songs #t1{
+    padding: 0px 23px;
+    cursor:pointer;
+}
+.songs img{
+    height:40px;
+    width: 40px;
+    border-radius: 30px;
+    margin:0px 0px 0px 15px;
+    
+}
+.bottom{
+    height:90px;
+    background-color: goldenrod;
+    position:sticky;
+    bottom:0px;
+    width:1300px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;  
+    color:whitesmoke; 
+}
+
+.bottom i{
+    margin:12px 0px;
+    cursor: pointer;
+}
+#progressbar{
+    width:80vw;
+    cursor:pointer;
+}
+
