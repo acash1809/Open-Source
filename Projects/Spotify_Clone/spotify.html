@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mp3 Player</title>
+    <link href="style.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="/Projects/images/logo.png" alt="Spotify Logo"> Spotify&reg</li>
+            <li> Home </li>
+            <li> About </li>
+        </ul>
+       
+    </nav>
+
+       <div class="container">
+        <div class="playlist">     
+            <h3> Best of NCS</h3> 
+            <div>
+                <div class="songs">
+                    <img src="/Projects/covers/1.jpg">
+                    <span class="songname">Let me love you</span>
+                    <span  id="t1">5:34 <i id="1" class="far songItemPlay fa-play-circle"></i> </span>
+                </div>
+                <div class="songs">
+                    <img src="/Projects/covers/2.jpg">
+                    <span class="songname">Let me love you</span>
+                     <span class="timestamp">5:34 <i id="1" class="far songItemPlay fa-play-circle"></i></span>
+                </div>
+                <div class="songs">
+                    <img src="/Projects/covers/3.jpg">
+                    <span class="songname">Let me love you</span>
+                    <span class="timestamp">5:34 <i id="1" class="far songItemPlay fa-play-circle"></i></span>
+                </div>
+                <div class="songs">
+                    <img src="/Projects/covers/4.jpg">
+                    <span class="songname">Let me love you</span>
+                    <span class="timestamp">5:34 <i id="1" class="far songItemPlay fa-play-circle"></i></span>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="bottom">
+        <input type="range" name="progress bar" id="progressbar" value = "0" min="0" max="100">
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="master"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>      
+    </div>
+   
+    
+    <script src="/Projects/myscript.js"></script> 
+    <script src="https://kit.fontawesome.com/fe853c5b56.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
