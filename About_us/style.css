@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+   list-style: none;
+   text-decoration: none;
+}
+.main_body{
+    display: flex;
+    height: 350px;
+    background-color: rgb(237, 224, 226);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.list_1{
+    
+  margin-left: 120px;
+    background: url(./Images/gamma4.png) ;
+   background-repeat: no-repeat;
+   color: pink;
+   background-size: cover;
+    width: 80px;
+    height: 80px;
+}
+.list_2{
+    margin-left: 40px;
+   font-size: 40px;
+   color: red;
+   font-weight: bold;
+    
+}
+.list_3{
+   font-size: 20px;
+  
+   
+    
+}
+.main_ul li {
+    margin-top: 25px;
+}
+.secondary_ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+}
+.secondary_ul li{
+    
+    padding-right: 20px;
+}
+.icon_1{
+    background: url(./Images/icons8-github-30.png) no-repeat center center ;
+    margin-left: 30px;
+   background-size: cover;
+ width: 30px;
+ height: 35px;
+object-fit: cover;
+    
+}
+.icon_2{
+    background: url(./Images/icons8-twitter-30.png) no-repeat center center ;
+margin-left: 20px;
+   background-size: cover;
+ width: 30px;
+ height: 35px;
+object-fit: cover;
+    
+}
+.heading_body{
+    margin-top: 20px;
+}
+
+.cards{
+    margin-top: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+
+.contri{
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
