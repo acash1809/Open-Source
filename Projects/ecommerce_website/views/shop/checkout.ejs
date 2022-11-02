@@ -1,0 +1,35 @@
+<%- include('../includes/head.ejs',{pageTitle:pageTitle})%>
+</head>
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <main>
+        <ul>
+            <%for(let p of products){%>
+                <li class="card cart__item product-item card__content">
+                    Product: <%= p.productId.title %> <br>
+                    Price: <%= p.productId.price %> <br>
+                    Quantity: <%= p.quantity %>
+                </li>
+            <% } %>
+        </ul>
+        <hr style="size: 100%;">
+        <div>
+            <h2>Total : <%= totalSum %> </h2>
+        </div>
+        <div class="centered">
+            <button id="order-btn" class="btn btn-outline-success">ORDER</button>
+            <script src="https://js.stripe.com/v3/"></script>
+            <script>
+                var stripe = Stripe('pk_test_51LXOdBSFlaKbRGh5MUgSYQF9gsKXkA7Xu8qmGT2RfQmSk1zMofXU7MYHqJXhe36RCluEq2xPAYrhE1aVkaTITDhi00Br8Dpo9h')
+                var orderBtn = document.getElementById('order-btn');
+                orderBtn.addEventListener('click',function(){
+                    stripe.redirectToCheckout({//redirects to someother page which takes card info
+                        //then returns to our page
+                        sessionId: '<%= sessionId %>',
+                    });
+                });
+            </script>
+        </div>
+    </main>
+    
+<%- include('../includes/end.ejs') %>

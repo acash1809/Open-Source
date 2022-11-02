@@ -1,0 +1,48 @@
+<%- include('../includes/head.ejs',{pageTitle:pageTitle})%>
+</head>
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <main>
+        <% if(prods.length>0){%>
+            <div class="card mx-auto" style="width: 60%; min-width: 40%">
+                <div class="card-header"> 
+                    <div class="align-self-center">
+                        <h2 class="float-start">Your Cart</h2>
+                        <a class="float-end btn btn-success" href="/checkout"> Order Now!! </a>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <%for(let p of prods){%>
+                        <li class="list-group-item">
+                            Product: <%= p.productId.title %> <br>
+                            Price: <%= p.productId.price %> <br>
+                            Quantity: <%= p.quantity %>
+                            <div>
+                                <form action="/delete-item-cart" method="post">
+                                    <input type="hidden" name="productId" value ="<%=p.productId._id%>">
+                                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                            </div>
+                        </li>
+                        <br>
+                    <% } %>
+                </ul>
+            </div>
+            
+                    
+            <br>
+            <br>
+            <div class="centered" >
+                <!-- <form action="/create-order" method="post">
+                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                    <button type="submit" class="btn">Order Now!</button>
+                </form> -->
+                
+            </div>
+        <% } else{ %>
+            <h1>Cart Empty! Continue Shopping</h1>
+        <% } %>
+    </main>
+    
+<%- include('../includes/end.ejs') %>

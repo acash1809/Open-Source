@@ -1,0 +1,60 @@
+<%- include('../includes/head.ejs',{pageTitle:pageTitle})%>
+<style>
+    .boxe{
+        background-color: rebeccapurple;
+    }
+</style>
+</head>
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <main class="order_grid">
+        <% if(orders.length>0){%>
+            <ul>
+                <% orders.forEach(order => { %>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Order: #<%= order._id %>-
+                                <a href="/orders/<%= order._id %>" target="_blank" rel="noopener">Invoice</a>
+                            </h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Order Items:</h6>
+                            <% order.products.forEach(p=> { %>
+                                <p>
+                                    Title: "<%= p.product.title %>", Quantity: "<%= p.quantity %>"
+                                </p>
+                            <% }); %>
+                        </div>
+                    </div>
+                    <!-- <div class="card centered">
+                        <li>
+                            <h3>
+                                Order: #<%= order._id %>
+                                - 
+                                <a href="/orders/<%= order._id %>" target="_blank" rel="noopener">Invoice</a>
+                            </h3>
+                            <ul>
+                                <% order.products.forEach(p => { %>
+                                    <li><%= p.product.title %> (<%= p.quantity %>) </li>
+                                <% }); %>
+                            </ul>
+                        </li>
+                    </div> -->
+                    <br>
+                <% }); %>
+            </ul>
+            
+        <% }else{ %>
+            <h1>Nothing to show here :)</h1>
+        <% } %>
+    </main>
+    <!-- <div class="container text-center">
+        <% if(orders.length>0){%>
+            <div class="row justify-content-md-center">
+                <% orders.forEach(order=> { %>
+                    <div class="col-md-8 boxe">column1</div>
+                <%});%>
+            </div>
+        <% }else{ %>
+            <h1>Nothing to show here :)</h1>
+        <% } %>
+    </div> -->
+<%- include('../includes/end.ejs') %>

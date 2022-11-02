@@ -1,0 +1,59 @@
+<%- include('../includes/head.ejs',{pageTitle:pageTitle}) %>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <main>
+        <form class="mx-auto" action="/admin/<% if(editing){ %>edit-product<% }else{ %>add-product<% } %>" method="POST" enctype="multipart/form-data">
+            <div class="mx-auto mb-3" style="width: 40%;">
+                <label for="title">Title</label>
+                <input class="form-control <%= validationErrors.find(e => e.param === 'title')? 'is-invalid': '' %>" type="text" name="title" id="title"
+                    value="<% if(editing || hasError){ %><%= product.title %><% } %>">
+            </div>
+            <!-- <div class="mx-auto mb-3" style="width: 40%;">
+                <label for="imageUrl">Image</label>
+                <input class="form-control <%= validationErrors.find(e => e.param === 'imageUrl')? 'is-invalid': '' %>" type="text" name="imageUrl"
+                    id="imageUrl" value="<% if(editing || hasError){ %><%= product.imageUrl %><% } %>">
+            </div> -->
+            <div class="mx-auto mb-3" style="width: 40%;"> 
+                <label for="image">Image</label>
+                <input class="form-control" type="file" name='image' id="image">
+            </div>
+
+            <div class="mx-auto mb-3" style="width: 40%;">
+                <label for="price">Price</label>
+                <input class="form-control <%= validationErrors.find(e => e.param === 'price')? 'invalid': '' %>" type="number" name="price"
+                    id="price" step="0.01" value="<% if(editing || hasError){ %><%= product.price %><% } %>">
+            </div>
+
+            <div class="mx-auto mb-3" style="width: 40%;">
+                <label for="details">Description</label>
+                <textarea class="form-control <%= validationErrors.find(e => e.param === 'details')? 'invalid': '' %>" name="details" id="details"
+                    rows="5"><% if(editing || hasError){ %><%= product.details %><% } %></textarea>
+            </div>
+
+            <% if(editing){ %>
+                <input type="hidden" name="productId" value="<%= product._id %>">
+            <% } %>
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+
+            <div class="mx-auto mb-3" style="width: 10%;">
+                <button class="form-control btn btn-outline-success" type="submit">
+                <% if(editing){ %>
+                    Update Product
+                    <%} else {%>
+                        Add Product
+                        <% } %>
+                </button>
+            </div>
+        </form>
+        <% if(errorMessage){%>
+            <div class="user-message user-message--error">
+                <!-- <h5 style="color: red;"> <place error message here> </h5> -->
+                <%= errorMessage %>
+            </div>
+        <% } %>
+    </main>
+<%- include('../includes/end.ejs') %>
