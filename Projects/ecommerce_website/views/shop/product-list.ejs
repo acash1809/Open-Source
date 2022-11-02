@@ -1,0 +1,41 @@
+<%- include('../includes/head.ejs',{pageTitle:pageTitle}) %>
+    <!-- <link rel="stylesheet" href="/css/product.css"> -->
+</head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <div class="container-fluid text-center">
+        <% if (product.length> 0) { %>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <% for (let prods of product) { %>
+                    <div class="col">
+                        <div class="card text-center mx-auto" style="width: 65%">
+                            <img class='img-fluid img-thumbnail rounded mx-auto' src="<%= prods.imageUrl %>"
+                                alt="<%= prods.title %>">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    <%= prods.title %>
+                                </h3>
+                                <h5 class="card-title">&#8377
+                                    <%= prods.price %>
+                                </h5>
+                                <p class="card-text">
+                                    <%= prods.details %>
+                                </p>
+                                <div>
+                                    <a href="/products/<%= prods._id %>" class="btn btn-outline-info">Details</a>
+                                    <% if(isAuthenticated){ %>
+                                        <%- include('../includes/add-to-cart.ejs',{prods:prods}) %>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+            <% } else { %>
+                <h1>No Products Found!</h1>
+                <% } %>
+    </div>
+
+<%- include('../includes/end.ejs') %>

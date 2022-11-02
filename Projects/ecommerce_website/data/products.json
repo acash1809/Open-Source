@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Trimmer",
+    "ImageUrl": "https://th.bing.com/th/id/R.b8f3604c40655bffd67f8243927dc6c3?rik=DZbFM9typ4hBJg&riu=http%3a%2f%2fimages2.naptol.com%2fusr%2flocal%2fcsp%2fstaticContent%2fproduct_images%2fvertical%2f750x1000%2fPhilips-QT4000-Beard-Trimmer-Black-04-03-2014-1.jpg&ehk=IcvqAW9iS4%2fSCIUVLZKDO7Dh2U3Dj9bUjlrcNTcd6GM%3d&risl=&pid=ImgRaw&r=0",
+    "price": "2000",
+    "details": "Philips trimmer",
+    "id": "925079"
+  },
+  {
+    "title": "Deodorant",
+    "ImageUrl": "https://pngimg.com/uploads/deodorant/deodorant_PNG53.png",
+    "price": "350",
+    "details": "Dove Whitening (Original)",
+    "id": "123123"
+  },
+  {
+    "title": "Coffee Beans",
+    "ImageUrl": "https://th.bing.com/th/id/OIP.rtwQG2BjwOvr07V--fA0QgHaLH?w=127&h=187&c=7&r=0&o=5&pid=1.7",
+    "price": "150",
+    "details": "Arabia Coffee Beans. High Quality",
+    "id": "123456"
+  },
+  {
+    "title": "Men's Suit",
+    "ImageUrl": "https://happygentleman.com/wp-content/uploads/2019/11/mens-navy-blue-3-piece-wedding-suit.jpg",
+    "price": "11000",
+    "details": "Elegant Men's Suit for Wedding",
+    "id": "121452"
+  },
+  {
+    "title": "Coffee Beans",
+    "ImageUrl": "https://i.pinimg.com/736x/79/a5/76/79a576e2737c7a0b36b6c78ddcf3af74.jpg",
+    "price": "200",
+    "details": "Imported Coffee beans",
+    "id": "124141"
+  },
+  {
+    "title": "Tshirt",
+    "ImageUrl": "https://images.bewakoof.com/t1080/black-short-collar-tipping-polo-329863-1655817094-7.jpg",
+    "price": "240",
+    "details": "Polo T-shirt by Bewakoof.com",
+    "id": "124478"
+  },
+  {
+    "title": "Plastic Chair",
+    "ImageUrl": "https://n1.sdlcdn.com/imgs/c/k/5/RUBY-Plastic-Chair-SDL728690539-3-01ae2.jpg",
+    "price": "1800",
+    "details": "Good Quality Plastic Chair",
+    "id": "123446"
+  },
+  {
+    "title": "Teddy Bear",
+    "ImageUrl": "https://th.bing.com/th/id/OIP.9akn-QNusaSxkHkmRKo5PAHaJ4?pid=ImgDet&rs=1",
+    "price": "4500",
+    "details": "Soft and plush Teddy Bear imported from UK",
+    "id": "179942"
+  },
+  {
+    "title": "Mug",
+    "ImageUrl": "https://th.bing.com/th/id/OIP.w2fn4U_5Iz3TZosCRCg-PQHaHV?pid=ImgDet&rs=1",
+    "price": "100",
+    "details": "Porcelain mug, Capacity: 250ml, Colour: blue",
+    "id": "244634"
+  },
+  {
+    "title": "Razor",
+    "ImageUrl": "https://specials-images.forbesimg.com/imageserve/5d1a7fac4c687b00085b814b/960x0.jpg?fit=scale",
+    "price": "3500",
+    "details": "World Class Electric Razor by Gillette.",
+    "id": "293849"
+  },
+  {
+    "title": "Bottle",
+    "ImageUrl": "https://cdn.ecommercedns.uk/files/6/223396/9/5709159/msp03509-2.jpg",
+    "price": "500",
+    "details": "Copper water bottle to make your everyday drinking water healthier",
+    "id": "682743"
+  }
+]

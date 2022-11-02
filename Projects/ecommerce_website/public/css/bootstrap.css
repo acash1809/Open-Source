@@ -1,0 +1,32 @@
+.form-control input.invalid {
+    border-color: red;
+}
+
+.form-control textarea.invalid {
+    border-color: red;
+}
+
+.comment-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentSection {
+    text-align: center;
+    align-self: center;
+    background-color: rgb(253, 243, 231);
+    width: auto;
+    height: 14rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.comment-card {
+    margin: 0.5rem;
+    padding: 0.2rem;
+    width: 50%;
+    background-color: aliceblue;
+    height: 3rem;
+    border-radius: 10px;
+}
